@@ -3,7 +3,7 @@
 docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 samgabrail/jenkins-tf-vault-ansible:latest
 echo "✅ Go to the Ports tab where you will find the link to access the Jenkins UI on port 8080"
 echo "...Retrieving your initial admin password"
-sleep 7
+sleep 15
 echo "✅ Below are your initial admin password to access Jenkins:"
 sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
 
