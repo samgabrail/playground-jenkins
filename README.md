@@ -9,3 +9,9 @@ To get the initial admin password, run the following command:
 ```bash
 sudo cat /var/lib/docker/volumes/jenkins_home/_data/secrets/initialAdminPassword
 ```
+
+If for some reason, the Jenkins container stops or gets deleted you can restart it with this command:
+
+```bash
+docker run -d -v jenkins_home:/var/jenkins_home -p 8080:8080 -p 50000:50000 samgabrail/jenkins-tf-vault-ansible:latest
+```
