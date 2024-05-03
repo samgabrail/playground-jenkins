@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:lts
+FROM jenkins/jenkins:2.456
 # if we want to install via apt
 ARG TERRAFORM_VERSION=1.3.9
 ARG VAULT_VERSION=1.12.3
